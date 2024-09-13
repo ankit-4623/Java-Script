@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        button{
+        justify-content: space-evenly;
+        margin-inline: 10px;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi ankit nayek</h1>
+    <button id="cancle">cancle</button>
+    <button id="retry">retry</button>
+</body>
+<script>
+    const date = function () {
+        console.log('ankit',Date.now());
+        
+    }
+  let inid
+
+   
+document.querySelector('#retry').addEventListener('click',function () {
+    inid =  setInterval(date, 1000);
+
+})
+document.querySelector('#cancle').addEventListener('click',function () {
+  clearInterval(inid)
+})
+
+</script>
+</html>

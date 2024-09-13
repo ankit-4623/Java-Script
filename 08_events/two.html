@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hi ankit</h1>
+    <button id="cancle">cancle</button>
+</body>
+<script>
+    const say = function () {
+        console.log('ankit');
+        
+    }
+ const changetext = function () {
+    document.querySelector('h1').innerHTML = "hi sonali"
+ }
+
+const cme = setTimeout(changetext,2000)
+
+  document.querySelector("#cancle").addEventListener('click',function () {
+    clearTimeout(cme)
+    console.log('stopped');
+    
+  })
+
+</script>
+</html>
