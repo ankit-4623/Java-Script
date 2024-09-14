@@ -17,6 +17,7 @@ const start_changin_color = function () {
 }
 const stop_changin_color = function () {
     clearInterval(in_id)
+    in_id = null
 }
 
 document.querySelector('#start').addEventListener('click',start_changin_color)
